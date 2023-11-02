@@ -1,0 +1,79 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        background-image: url('droplet.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        font-family: Arial, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        color: blue;
+    }
+
+    .container {
+        background-color: aquamarine;
+        padding: 20px;
+        border-radius: 10px;
+        text-align: center;
+    }
+
+    .form-label {
+        display: block;
+        text-align: center;
+    }
+
+    .form-input {
+        display: block;
+        width: 100%;
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        margin: 10px 0;
+        font-size: 16px;
+    }
+
+    .submit-button {
+        display: block;
+        width: 100%;
+        padding: 10px;
+        background-color: aquamarine;
+        border: none;
+        border-radius: 5px;
+        font-size: 18px;
+        color: blue;
+        cursor: pointer;
+    }
+    h1{
+        color: blue;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <h1>Sign Up</h1>
+        <form action="/register" method="post">
+            <label for="username" class="form-label">Username:</label>
+            <input type="text" id="username" name="username" class="form-input" required>
+
+            <label for="phone">Phone no.</label>
+            <input type="tel" id="phone" name="phone" class="form-input" required>
+
+            <label for="email" class="form-label">Email:</label>
+            <input type="email" id="email" name="email" class="form-input" required>
+
+            <input type="submit" value="Submit" class="submit-button">
+        </form>
+    </div>
+</body>
+</html>
